@@ -19,12 +19,21 @@ Caps lock as extend layer (layer 1) on both normal keyboards and 42-key keyboard
 
 Two or three thumb layers (layer 2, 3, 4) on 42-key keyboards for number, symbols, function keys, media controls, and mouse control, two keys on right thumb to be allocated for layer activation: Either key A, key B, or key A+B for the three layers. 
 
+Additional numpad layer (layer 2) on normal keyboard.
+
 ## Dreymar's extend layer
 From https://dreymar.colemak.org/layers-extend.html
 
 Unable to run the original EPKL implementation from https://github.com/DreymaR/BigBagKbdTrixPKL on my work computer (flagged as potential virus and quarantined immediately) so used the AHK implementation below instead with several modifications.
 - AHK implementation: https://github.com/stevep99/keyboard-tweaks/blob/master/ExtendLayer
 - Karabiner-elements implementation: https://github.com/ProfXwing/extend-karabiner
+
+Current implementation:
+- ahk_extend.ahk for Windows (extend layer, to be uploaded later, follows dreymar's extend).
+- karabiner_extend.json (extend layer, some changes with the mod keys for mac).
+- keychron_k3_pro.json (extend layer with mac mods + default fn layer with numpad keys for Keychron K3 Pro with QMK/VIA).
+
+To also add visuals.
 
 ## 42-key layout
 Layouts for reference:
@@ -33,3 +42,6 @@ Layouts for reference:
 - Miryoku 36-key layout: https://github.com/manna-harbour/miryoku/tree/master/docs/reference
 
 Corn1sher and Corne-ish-zen for reference, somewhat similar to dreymar's extend layer. Miryoku uses home row mods, any way to adapt it to dreymar and without home row mods?
+
+Current implementation:
+- None, don't have the keyboard yet. 
