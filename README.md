@@ -1,47 +1,27 @@
 # KeyboardLayouts
-Experimenting with keyboard layout and layers: 
-- Currently using vanilla colemak with a slightly modified dreymar's extend layer on normal keyboards.
-- Fell into the mechanical keyboard rabbit hole, planning to get a 75% QMK keyboard and a 42-key QMK keyboard for use with steno/plover.
-- Want to implement a modified version of dreymar's extend layer with QMK on both the normal and 42-key keyboard to keep muscle memory. 
 
-## Features
-Requirements:
-- Left hand should have easy access to functions and commands while right hand is occupied with pen/paper or mouse/trackpad.
-- Able to stay mostly within home row when typing with both hands.
-- Able to access mouse controls to avoid reaching the mouse for trivial stuff.
-- Able to easily switch between normal keyboard and 42-key keyboard with minimal difference in muscle memory.
-- Normal keyboard layers should be easy to implement with AHK or other software on work computer without admin priviledge or being flagged as a virus.
+A place to store my keyboard layout config files. Currently using the colemak layout with an extend layer, mainly via the Keychron K3 Pro keyboard.
 
-Caps lock as extend layer (layer 1) on both normal keyboards and 42-key keyboards.
-- Nav keys on right side, mod keys and mouse scroll wheel control on left side?
-- Backspace/delete easily accessible with left hand? Currently extend+tab is backspace and extend+` is delete.
-- Num row on normal vs 42-key keyboard?
+## Extend layer config/scripts
 
-Two or three thumb layers (layer 2, 3, 4) on 42-key keyboards for number, symbols, function keys, media controls, and mouse control, two keys on right thumb to be allocated for layer activation: Either key A, key B, or key A+B for the three layers. 
+Original config/scripts based on [Dreymar's extend layer](https://dreymar.colemak.org/layers-extend.html).
 
-Additional numpad layer (layer 2) on normal keyboard.
+- archive/extend.ahk - Autohotkey script for use in Windows (need to compile, can run without admin).
+- archive/karabiner_extend.json - Karabiner config for use in macOS.
+- archive/keychron_k3_pro.json - VIA config for Keychron K3 Pro keyboard.
 
-## Dreymar's extend layer
-From https://dreymar.colemak.org/layers-extend.html
+Alternative version with vim-style arrow keys also available.
 
-Unable to run the original EPKL implementation from https://github.com/DreymaR/BigBagKbdTrixPKL on my work computer (flagged as potential virus and quarantined immediately) so used the AHK implementation below instead with several modifications.
+- archive/extend_vim.ahk - Autohotkey script for use in Windows (need to compile, can run without admin).
+- archive/karabiner_extend_vim.json - Karabiner config for use in macOS.
+- archive/keychron_k3_pro_vim.json - VIA config for Keychron K3 Pro keyboard.
+
+Eventually switched from the original Dreymar version to the vim-style arrow keys version, and currently experimenting with a slightly modified layout.
+
+- Currently using keychron_k3_pro_20250615.json (mostly stopped using the AHK and Karabiner version).
+
+Reference:
+
+- Original EPKL implementation: https://github.com/DreymaR/BigBagKbdTrixPKL
 - AHK implementation: https://github.com/stevep99/keyboard-tweaks/blob/master/ExtendLayer
 - Karabiner-elements implementation: https://github.com/ProfXwing/extend-karabiner
-
-Current implementation:
-- ahk_extend.ahk for Windows (extend layer, to be uploaded later, follows dreymar's extend).
-- karabiner_extend.json (extend layer, some changes with the mod keys for mac).
-- keychron_k3_pro.json (extend layer with mac mods + default fn layer with numpad keys for Keychron K3 Pro with QMK/VIA).
-
-To also add visuals.
-
-## 42-key layout
-Layouts for reference:
-- Corn1sher 42-key layout: https://www.reddit.com/r/ErgoMechKeyboards/comments/p38oji/corn1sher_personal_keymap/
-- Corne-ish-zen 42-key layout: https://github.com/Valarauka-GH/zmk-config-Corne-ish-Zen/tree/main/config
-- Miryoku 36-key layout: https://github.com/manna-harbour/miryoku/tree/master/docs/reference
-
-Corn1sher and Corne-ish-zen for reference, somewhat similar to dreymar's extend layer. Miryoku uses home row mods, any way to adapt it to dreymar and without home row mods?
-
-Current implementation:
-- None, don't have the keyboard yet. 
